@@ -1,4 +1,10 @@
 <?php
+//Begin Really Simple SSL session cookie settings
+@ini_set('session.cookie_httponly', true);
+@ini_set('session.cookie_secure', true);
+@ini_set('session.use_only_cookies', true);
+//END Really Simple SSL
+
 /**
  * The base configuration for WordPress
  *
@@ -20,13 +26,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'db_backend' );
+define( 'DB_NAME', 'db_olismix' );
 
 /** MySQL database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'olis' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'Olis121M' );
+define( 'DB_PASSWORD', 'Olis121M*#' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -56,7 +62,7 @@ define( 'AUTH_SALT',        '?/R;<F<U%j%W32]~--J4%(w^hoecUXuB?2XNl%v-f1l4/jKrbsO
 define( 'SECURE_AUTH_SALT', 'e*8aSS:cB~Z&nJ^JxcyYQAdsa2HF1R:[(:8,dwfH!UcSI&ZlI`.R>l@2G`V:Tebf' );
 define( 'LOGGED_IN_SALT',   '*3y-Lo/4B?M.E?|;ARCG[!l|I?)_&{R+`$_1*.QL$4O ~~a@]fHk,8dn[`tD6]Z;' );
 define( 'NONCE_SALT',       '7Cf32=`vfSSzQT i*dj>JSpIb6dUGZ|6{/ *LwP]dB1aBKaNt}<&OcM8}B$6(,w9' );
-
+define( 'WP_HOME', 'https://olismix.com/' );
 /**#@-*/
 
 /**
